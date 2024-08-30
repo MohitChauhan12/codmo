@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CodeMo</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'images/fav-ico.ico' %}" />
+
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <style>
+            #annimation:hover{
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{% url 'about' %}">Profile</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'post' %}">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="masthead" style="background-image: url({% static 'images/home1-bg.gif' %})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>CodeMo</h1>
+                            <span class="subheading">Create your own project with CodeMo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">What is CodeMo</h2>
+                        <p>CodeMo is a site where you will find easy to code IT Projects at no charges. It's a fun and easy to use site if you want to learn a new web technology. CodeMo has a really nice Python track. If you'd rather learn a language through a more traditional route. 
+                        <p>This is a good primer to starting programming with Python because HTML, CSS, JavaScript and Python are considered to be the easiest programming languages to learn for beginners.</p>
+                        <p>CodeMo provides you with easy to use codes as well as live website links. So that you can also see live project and how the project is running on the live server.</p>
+                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="{% url 'about' %}" id="annimation">MORE INFO →</a></div>
+
+                        <h2 class="section-heading mb-5">Why choose CodeMo</h2>
+                        <a href="{% url 'post' %}"><img class="img-fluid mb-3" id="annimation" src="{% static 'images/index-about-info.png' %}" alt="..."/></a>
+                        <span class="caption text-muted">Here are the screenshots of some IT projects, click on the screenshots and check the projects</span>
+
+                        <p>CodeMo provides you IT projects with easy code at no charges. With CodeMo, experience the freedom to create a unique and professional project on your own. The CodeMo website is the easiest way to make a IT project, and you can even create your entire project using your laptop.</p>
+                        <p>CodeMo tools provide the freedom to create your IT project without any design or coding knowledge. You can even create your entire website, from start to finish.</p>
+                        <p>CodeMo have active communities that can help with troubleshooting, advice and best practices. CodeMo can help developers improve their skills and stay updated with new technologies. CodeMo provides valuable resources and support collaboration, making them a practical choice for IT projects.</p>
+                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="{% url 'post' %}" id="annimation">MORE INFO →</a></div>
+                        
+                        <h2 class="section-heading">How do I make my website mobile friendly?</h2>
+                        <p>Globally, 62% of users access the internet using a mobile phone, which means having a mobile-friendly website is key for reaching potential visitors. Mobile-friendliness is also a crucial aspect of SEO.</p>
+                        <p>That's why all projects made with CodeMo are responsive, which means they are automatically optimized for both mobile and desktop devices! Your CodeMo website will provide website visitors with an amazing user experience, whether they're viewing your website on their phones or on a computer.</p>
+                        <blockquote class="blockquote">Earning a top ranking on Google's results pages can significantly increase your website traffic and strengthen your business.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/MohitChauhan12" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://linkedin.com/in/mohit-chauhan-m88" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>                            
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/rana_mohit_1" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; 2024 CodeMo | All rights reserved</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+    </body>
+</html>
